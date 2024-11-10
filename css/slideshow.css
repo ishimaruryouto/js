@@ -17,17 +17,22 @@ img {
     text-align: center;
 }
 
+.img_wrap {
+    position: relative;
+    margin: auto;
+    width: 50rem;
+    /* border: 3px solid tomato; */
+}
+
 .title>h1 {
     font-size: 3.2rem;
     font-family: serif;
-    margin: 10rem;
+    margin: 8rem;
 }
 
 .s1000rr_wrap {
     display: flex;
-    position: absolute;
-    top: 20rem;
-    left: 50rem;
+    overflow: hidden;
 }
 
 .s1000rr {
@@ -43,3 +48,5 @@ img {
 .s100orr_rase {
     overflow: hidden;
 }
+
+.circle ul li {}
