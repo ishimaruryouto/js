@@ -49,4 +49,10 @@ img {
     overflow: hidden;
 }
 
-.circle ul li {}
+.circle {
+    display: flex;
+}
+
+.circle_btn {
+    background-color: #bbb;
+}
