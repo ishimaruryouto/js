@@ -17,6 +17,10 @@ li {
     list-style: none;
 }
 
+.slideshow_wrap {
+    position: relative;
+}
+
 .title {
     text-align: center;
 }
@@ -52,6 +56,46 @@ li {
 .s100orr_rase {
     overflow: hidden;
 }
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 440px;
+}
+
+.next {
+    right: 440px;
+}
+
+
+.prev::before,
+.next::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    border-top: solid 3px #000;
+    border-right: solid 3px #000;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.prev::before {
+    transform: translate(-50%, -50%) rotate(-135deg);
+}
+
+.next::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
 
 .circle ul {
     display: flex;
