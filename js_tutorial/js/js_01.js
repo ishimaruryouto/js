@@ -35,8 +35,14 @@ const language = "フランス語";
 console.log(language);
 console.log(language + "を話せます");
 
-document.querySelector("wrap") = {
-    console.log("三好ん");
+// $の使い方
+let myname = "石丸椋士";
+console.log(`僕の名前は${myname}です`);
 
-}
+let age = 19;
+console.log(`今は${age}です`);
+
+
+
+
 
