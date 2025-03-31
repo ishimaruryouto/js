@@ -57,14 +57,18 @@ if (myAge >= 20) {
 }
 
 const password = "ninjawanko";
-if (password === "ninjawanko"); {
+if (password === "ninjawanko") {
     console.log("ログインに成功しました");
 };
 
-if (password !== "ninjawanko"); {
+if (password !== "ninjawanko") {
     console.log("パスワードが間違っています");
 };
 
-
-
+// elseの使い方
+if (myAge >= 20) {
+    console.log("私は20歳以上です");
+} else {
+    console.log("私は20歳未満です");
+}
 
