@@ -42,7 +42,19 @@ console.log(`僕の名前は${myname}です`);
 let age = 19;
 console.log(`今は${age}です`);
 
+// if文の使い方
+const level = 12;
+if (level > 10) {
+    console.log("levelは10よりも大きいです");
+}
 
+let myAge = 24;
+console.log(myAge >= 20);
+console.log(myAge < 20);
+
+if (myAge >= 20) {
+    console.log("私は20歳以上です");
+}
 
 
 
