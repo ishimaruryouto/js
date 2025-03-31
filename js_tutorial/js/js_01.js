@@ -57,11 +57,11 @@ if (myAge >= 20) {
 }
 
 const password = "ninjawanko";
-console.log(password === "ninjawanko"); {
+if (password === "ninjawanko"); {
     console.log("ログインに成功しました");
 };
 
-console.log(password !== "ninjawanko"); {
+if (password !== "ninjawanko"); {
     console.log("パスワードが間違っています");
 };
 
