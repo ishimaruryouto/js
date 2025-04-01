@@ -72,3 +72,51 @@ if (myAge >= 20) {
     console.log("私は20歳未満です");
 }
 
+// else ifの使い方
+if (myAge >= 17) {
+    console.log("私は20歳以上です");
+} else if (myAge >= 20) {
+    console.log("私は20歳未満ですが、10歳以上です");
+}
+else {
+    console.log("私は20歳未満です");
+}
+
+// かつ＆＆　　または||の使い方
+let age2 = 24;
+if (age2 >= 20 && age2 < 30) {
+    console.log("私は20代です");
+}
+
+// swith
+const n = 2;
+
+switch (n) {
+    case 1:
+        console.log("大吉です");
+        break;
+    case 2:
+        console.log("吉です");
+        break;
+    case 3:
+        console.log("小吉です");
+        break;
+}
+
+// defaultの使い方
+const n2 = 4;
+
+switch (n2) {
+    case 1:
+        console.log("大吉です");
+        break;
+    case 2:
+        console.log("吉です");
+        break;
+    case 3:
+        console.log("小吉です");
+        break;
+    default:
+        console.log("凶です");
+        break;
+}
