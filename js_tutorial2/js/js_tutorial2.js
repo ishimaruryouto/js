@@ -53,6 +53,16 @@ for (let i = 0; i < animals.length; i++) {
     console.log(animals[i]);
 }
 
+// 定数の代入
+const character = { name: "にんじゃわんこ", age: 14 }
+console.log(character);
+
+console.log(character.name);
+character.age = 20;
+console.log(character);
+
+
+
 
 
 
