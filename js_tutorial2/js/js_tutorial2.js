@@ -61,8 +61,24 @@ console.log(character.name);
 character.age = 20;
 console.log(character);
 
+const characters = [
+    { name: "にんじゃわんこ", age: 14 },
+    { name: "ひつじ仙人", age: 1000 }
+];
 
+console.log(characters[0]);
+console.log(characters[1].name);
 
+const character = [
+    { name: "にんじゃわんこ", age: 14 },
+    { name: "ひつじ仙人", age: 1000 }
+];
+
+for (let i = 0; i < character.length; i++) {
+    console.log();
+    ;
+
+}
 
 
 
