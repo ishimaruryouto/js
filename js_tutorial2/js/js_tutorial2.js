@@ -69,15 +69,63 @@ const characters = [
 console.log(characters[0]);
 console.log(characters[1].name);
 
-const character = [
+const characterAnimal = [
     { name: "にんじゃわんこ", age: 14 },
     { name: "ひつじ仙人", age: 1000 }
 ];
 
-for (let i = 0; i < character.length; i++) {
-    console.log();
-    ;
+for (let i = 0; i < characterAnimal.length; i++) {
+    console.log("-----------");
 
+    const characterGuys = characterAnimal[i];
+    console.log(`名前は${characterGuys.name}です`);
+    console.log(`${characterGuys.age}歳です`);
+}
+
+// 演習問題
+const chara = [
+    { name: "にんじゃわんこ", age: 14 },
+    { name: "ひつじ仙人", age: 100 },
+    { name: "ベイビーわんこ", age: 5 },
+    { name: "とりずきん" }
+];
+
+for (let i = 0; i < chara.length; i++) {
+    console.log("--------------------");
+
+    const character = chara[i];
+
+    console.log(`名前は${character.name}です`);
+
+    // if文を追加してください
+    if (character.age === undefined) {
+        console.log("年齢は秘密です");
+    } else {
+        console.log(`${character.age}歳です`);
+    }
+}
+
+// オブジェクトの応用
+const cafe = {
+    name: "Progateカフェ",
+    businessHours: {
+        // businessHoursの値に指定されたオブジェクトを代入してください
+        opening: "10:00(AM)",
+        closing: "8:00(PM)"
+    },
+    menus: ["コーヒー", "紅茶", "チョコレートケーキ"]
+};
+
+// 「店名:〇〇」を出力してください
+console.log(`店名:${cafe.name}`);
+
+// 「営業時間:〇〇から△△」を出力してください
+console.log(`営業時間: ${cafe.businessHours.opening}から${cafe.businessHours.closing}`);
+console.log(`----------------------------`);
+console.log("おすすめメニューはこちら");
+
+for (let i = 0; i < cafe.menus.length; i++) {
+    console.log(cafe.menus[i]);
 }
 
 
