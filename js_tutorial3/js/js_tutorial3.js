@@ -6,10 +6,9 @@ const greet = function () {
 greet();
 
 // 定数helloに関数を代入してください
-const name = "石丸椋士";
 const hello = function () {
     console.log("こんにちは！");
-    console.log(`私の名前は${name}です`);
+    console.log("私の名前はです");
 }
 hello();
 
@@ -49,5 +48,19 @@ if (check(123)) {
     console.log("3の倍数ではありません");
 }
 
+// スコープのお使い方
+const name = "ひつじ仙人";
+const introduce = () => {
+    const name = "にんじゃわんこ";
+    console.log(name);
+}
+introduce();
+console.log(name);
 
+// 総合課題（toMinutes関数）
+const toMinutes = (hour, minutues) => {
+    return hour * 60 + minutues;
+}
+const time = toMinutes(3, 20);
+console.log(`${time}分`);
 
